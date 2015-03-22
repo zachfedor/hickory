@@ -1,0 +1,24 @@
+{
+    "name"        : "fedor/hickory",
+    "description" : "wordpress theme for hickory.io",
+    "authors"     : [
+        {
+            "name"    : "zachfedor",
+            "email"   : "zachfedor@gmail.com",
+            "homepage": "http://hickory.io"
+        }
+    ],
+    "type"        : "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url" : "http://wpackagist.org"
+        }
+    ],
+    "require"     : {
+        "johnpbloch/wordpress"            : ">=3.9"
+    },
+    "extra"       : {
+        "wordpress-install-dir": "wp"
+    }
+}
