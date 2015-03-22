@@ -9,12 +9,13 @@ bower_components/
 node_modules/
 npm-debug.log
 vendor/
+composer.lock
 
 # ignore wordpress core
 wp/
 
 # ignore gulp generated css
-wp-content/themes/gsep/assets/css/*.css
+wp-content/themes/*/assets/css/*.css
 
 # ignore server-specific files
 .htaccess
