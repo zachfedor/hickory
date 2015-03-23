@@ -1,0 +1,33 @@
+/**
+ * Theme Sass
+ *
+ * author: zachfedor
+ * url: http://hickory.io
+ * license: MIT
+ */
+
+$bg: #ffffff;
+$bg2: #efefef;
+$text: #354242;
+$accent: #ACEBAE;
+$highlight: #C9DE55;
+$shadow: #7D9100;
+
+$padding: 5%;
+
+// TEST HTML
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 4vw;
+  background: $bg;
+  color: $text;
+  text-align: center;
+}
