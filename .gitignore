@@ -14,8 +14,8 @@ composer.lock
 # ignore wordpress core
 wp/
 
-# ignore gulp generated css
-wp-content/themes/*/assets/css/*.css
+# ignore gulp generated files
+wp-content/themes/*/assets/dist/*
 
 # ignore server-specific files
 .htaccess
