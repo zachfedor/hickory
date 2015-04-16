@@ -18,17 +18,19 @@ $padding: 5%;
 
 // TEST HTML
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-size: 4vw;
-  background: $bg;
-  color: $text;
-  text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3vw;
+    background: $bg;
+    color: $text;
+    text-align: center;
 }
+
