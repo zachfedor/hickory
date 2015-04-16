@@ -6,24 +6,24 @@
  * author: zachfedor
  * version: 0.1
  * url: http://hickory.io
+ * license: MIT
  */
 
-echo CHILD_DIR;
-
-/**
- * Layout
- */
-//require_once( CHILD_DIR . '/lib/layout.php' );
+$site_root = get_stylesheet_directory();
 
 /**
  * Template
  */
-//require_once( CHILD_DIR . '/lib/template.php' );
+require_once( $site_root . '/lib/template.php' );
+
+/**
+ * Layout
+ */
+require_once( $site_root . '/lib/layout.php' );
 
 /**
  * Functions
  */
-
 // error log
 function elog( $x )
 {
