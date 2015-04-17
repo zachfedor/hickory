@@ -4,18 +4,20 @@
  * Header for Hickory.io
  */
 
-// Templates/Doctype
+// Lib/Doctype
 hickory_do_doctype();
 
 // Wordpress Head
 wp_head();
 
-// Templates/Analytics
+// Lib/Analytics
 //hickory_analytics();
 
-// Layouts/Header
+// Lib/Header
 hickory_do_header();
 
-// Layouts/Menu
+// Lib/Menu
+hickory_do_main_menu();
 
-//echo "header.php<br />";
+// Lib/Header
+hickory_do_header_hero();
