@@ -1,0 +1,20 @@
+/**
+ * Menu
+ */
+
+nav.main-menu {
+    width: 70%;
+    margin: 0 auto;
+
+    ul.menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li.menu-item {
+            text-align: center;
+            display: inline-block;
+            padding: 0 $padding;
+        }
+    }
+}

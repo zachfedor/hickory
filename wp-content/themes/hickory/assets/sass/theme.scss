@@ -7,14 +7,21 @@
  * license: MIT
  */
 
-$bg: #ffffff;
-$bg2: #efefef;
-$text: #354242;
-$accent: #ACEBAE;
-$highlight: #C9DE55;
-$shadow: #7D9100;
+// Bootstrap
+@import "../../../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+@import "../../../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
+@import "../../../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss";
 
-$padding: 5%;
+// Fontawesome
+@import "../../../../../bower_components/fontawesome/css/font-awesome.min.css";
+
+// Variables
+@import "variables.scss";
+
+// Layout
+@import "layout.scss";
+@import "menu.scss";
+@import "header.scss";
 
 // TEST HTML
 * {
