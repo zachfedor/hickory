@@ -8,8 +8,8 @@
 
 function hickory_do_footer()
 {
+    wp_footer();
     ?>
-    <!-- begin footer -->
     </body>
     </html>
     <?php
