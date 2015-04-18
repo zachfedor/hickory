@@ -8,6 +8,7 @@
  */
 
 // Bootstrap
+@import "../../../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_normalize.scss";
 @import "../../../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
 @import "../../../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
 @import "../../../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss";
@@ -38,6 +39,9 @@ body {
     font-size: 3vw;
     background: $bg;
     color: $text;
-    text-align: center;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}

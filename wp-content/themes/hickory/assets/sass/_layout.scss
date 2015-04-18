@@ -1,3 +1,16 @@
 /**
  * Layout
  */
+
+header.container, nav.container, main.container, footer.container {
+    width: 90%;
+
+    @media (min-width: 768px) {
+        width: 75%;
+    }
+}
+
+header.site-header {
+    margin: 20% auto;
+    text-align: center;
+}
