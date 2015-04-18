@@ -17,6 +17,8 @@ function hickory_do_header()
 function hickory_do_header_hero()
 {
     ?>
-    <a class="site-title" href="/" >Hickory Town Workshop</a>
+    <header class="site-header container" >
+        <a class="site-title" href="/" >Hickory Town Workshop</a>
+    </header>
     <?php
 }
