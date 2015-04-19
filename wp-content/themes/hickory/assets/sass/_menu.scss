@@ -3,9 +3,12 @@
  */
 
 nav.main-menu {
+    background: $bg;
+    border: 1px solid $bg2;
 
     ul.menu {
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
         padding: 0;
         list-style-type: none;
 
@@ -13,6 +16,18 @@ nav.main-menu {
             text-align: center;
             display: inline-block;
             padding: 0 $padding;
+
+            a {
+                display: block;
+                width: 100%;
+                color: $text;
+                text-decoration: none;
+
+                &:hover {
+                    color: $accent;
+                }
+                
+            }
         }
     }
 }
