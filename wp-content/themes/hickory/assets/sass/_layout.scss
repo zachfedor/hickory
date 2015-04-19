@@ -2,6 +2,47 @@
  * Layout
  */
 
+// General Elements
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3vw;
+    background: url("../images/wheat.jpeg") no-repeat scroll 0 0 $bg;
+    background-size: contain;
+    color: $text;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: $text;
+    text-decoration: none;
+    transition: color ease $time;
+ //   border-bottom: 2px solid $accent;
+
+    &:hover, &:focus {
+        color: $accent;
+//        border-color: $text;
+    }
+
+    &:visited {
+        color: $text;
+//        border-color: $accent;
+    }
+}
+
+// Structural Elements
 header.container, nav.container, main.container, footer.container {
     width: 90%;
 

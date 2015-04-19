@@ -23,25 +23,3 @@
 @import "layout.scss";
 @import "menu.scss";
 @import "header.scss";
-
-// TEST HTML
-* {
-    box-sizing: border-box;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3vw;
-    background: $bg;
-    color: $text;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
