@@ -58,6 +58,6 @@ header.site-header {
 
 main.container {
     background: $bg;
-    border: 2px solid $bg2;
+    box-shadow: 1px 1px 10px $shading;
 }
 

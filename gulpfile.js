@@ -53,7 +53,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     browsersync({
-        proxy: "http://localhost/hickory/"
+        proxy: "http://hickory.dev/"
     });
     gulp.watch( config.sassDir + '/**/*.scss', [ 'styles' ]);
     gulp.watch( config.jsDir + '/**/*.js', [ 'scripts' ]);
