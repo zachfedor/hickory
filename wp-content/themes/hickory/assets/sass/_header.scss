@@ -4,3 +4,50 @@
 
 .main-menu {
 }
+
+.site-background {
+    background: url("../images/wheat.jpeg") no-repeat scroll center center $bg2;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    center: 0;
+    z-index: -10;
+    border-bottom: 1px solid $bg;
+
+    &:after {
+        content: "";
+        background: $bg;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: -1px;
+        left: 0;
+        opacity: 0.1;
+        z-index: -8;
+    }
+}
+
+header.site-header {
+    margin: 20vh auto;
+    text-align: center;
+
+    a {
+        display: block;
+        letter-spacing: -1px;
+        color: $bg;
+        font-weight: 300;
+        background: $accent;
+        width: 21vw;
+        margin: 0 auto;
+        border: 5px solid $bg;
+
+        span.hickory {
+            font-weight: 900;
+            font-size: 4vw;
+            letter-spacing: 6px;
+            padding: 5px;
+        }
+    }
+}
