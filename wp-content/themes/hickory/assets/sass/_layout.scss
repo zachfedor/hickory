@@ -15,8 +15,7 @@ html {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3vw;
-    background: url("../images/wheat.jpeg") no-repeat scroll 0 0 $bg2;
-    background-size: contain;
+    background: $bg2;
     color: $text;
 }
 
@@ -49,11 +48,6 @@ header.container, nav.container, main.container, footer.container {
     @media (min-width: 768px) {
         width: 75%;
     }
-}
-
-header.site-header {
-    margin: 20% auto;
-    text-align: center;
 }
 
 main.container {
