@@ -10,6 +10,7 @@ function hickory_do_header()
     ?>
     </head>
     <body class="">
+        <div class="site-background"></div>
     <?php
 }
 
@@ -18,7 +19,7 @@ function hickory_do_header_hero()
 {
     ?>
     <header class="site-header container" >
-        <a class="site-title" href="/" >Hickory Town Workshop</a>
+        <a class="site-title" href="/" ><span class="hickory">Hickory</span><br/>Town Workshop</a>
     </header>
     <?php
 }
