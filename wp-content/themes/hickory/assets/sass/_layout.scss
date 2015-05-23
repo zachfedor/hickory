@@ -13,10 +13,24 @@ html {
 }
 
 body {
+    //font-family: Georgia, serif;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     font-size: 3vw;
-    background: $bg2;
+    background: $bg-dark;
     color: $text;
+}
+
+h1, h2 {
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    color: $accent;
 }
 
 img {
@@ -27,7 +41,7 @@ img {
 a {
     color: $text;
     text-decoration: none;
-    transition: color ease $time;
+    transition: color ease $time, background ease $time;
  //   border-bottom: 2px solid $accent;
 
     &:hover, &:focus {
@@ -53,5 +67,6 @@ header.container, nav.container, main.container, footer.container {
 main.container {
     background: $bg;
     box-shadow: 1px 1px 10px $shading;
+    //border: 1px solid $border;
 }
 

@@ -3,22 +3,18 @@
  */
 
 // Colors
-//$bg: #eeeff3; //wrong hue and temperature
-//$bg: #f5f5f5;
-//$bg: #FFFFFF;
-$bg: #F0F0EF;
-$bg2: #F0F0EF;
-//$bg2: #bea385; //too dark and orange
-//$bg2: #F2EEE9;
-//$bg2: #F3ECE7;
-//$text: #354242;
-$text: #292323;
-//$accent: #a7acc1;
-$accent: #A0BEB2;
+$bg: #f8fff0;
+$bg-dark: rgb(246, 255, 237);
+$border: rgb(189, 214, 132);
+
+$text: #10222b;
+
+$accent: #95AB63;
+$accent-dark: #829653;
+
 $mid: #8e5841;
 $high: #be9780;
 $low: #724337;
-
 $shading: rgba(0,0,0,0.1);
 
 // Spacing
