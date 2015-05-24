@@ -5,7 +5,7 @@
  */
 
 // Show Admin Toolbar
-show_admin_bar( true );
+//show_admin_bar( true );
 
 // Add Thumbnail Support
 add_theme_support( 'post-thumbnails' );

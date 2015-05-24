@@ -10,3 +10,10 @@ function hickory_enqueue_scripts() {
     error_log("styles enqueued");
 	//wp_enqueue_script( 'hickory-scripts', get_template_directory_uri() . '/assets/dist/them.min.js', array(), '1.0.0', true );
 }
+
+function hickory_do_scripts()
+{
+    ?>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <?php
+}

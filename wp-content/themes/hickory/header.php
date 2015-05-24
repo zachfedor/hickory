@@ -7,11 +7,15 @@
 // Lib/Doctype
 hickory_do_doctype();
 
-// Wordpress Head
-wp_head();
+// Lib/Load-Assets
+hickory_do_favicon();
+hickory_do_scripts();
 
 // Lib/Analytics
 //hickory_analytics();
+
+// Wordpress Head
+wp_head();
 
 // Lib/Header
 hickory_do_header();
