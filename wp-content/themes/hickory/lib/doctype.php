@@ -12,6 +12,5 @@ function hickory_do_doctype()
 <head>
     <meta name="charset" content="utf-8" />
     <title>Hickory</title>
-
 <?php
 }
