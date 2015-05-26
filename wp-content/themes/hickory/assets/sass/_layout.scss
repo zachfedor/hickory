@@ -10,15 +10,26 @@
 html {
     margin: 0;
     padding: 0;
+    background: url('http://hickory.dev/wp-content/themes/hickory/assets/images/wheat.jpeg') no-repeat center center fixed $accent;
+    background-size: cover;
 }
 
 body {
-    //font-family: Georgia, serif;
+    position: relative;
+    // to change width, also change the margin of aside.sidebar at desktop size
+    width: 90vw;
+    margin: 0 auto;
+    background: none;
+    color: $text;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    font-size: 3vw;
-    background: $bg-dark;
-    color: $text;
+    font-size: 2vw;
+
+    &:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
 }
 
 h1, h2 {
@@ -44,7 +55,7 @@ a {
     transition: color ease $time, background ease $time;
  //   border-bottom: 2px solid $accent;
 
-    &:hover, &:focus {
+    &:hover {
         color: $accent;
 //        border-color: $text;
     }
@@ -56,17 +67,66 @@ a {
 }
 
 // Structural Elements
-header.container, nav.container, main.container, footer.container {
-    width: 90%;
+main {
+    //min-height: 100vh;
+    float: left;
+    width: 55%;
+    margin-right: -100%;
+}
 
-    @media (min-width: 768px) {
-        width: 75%;
+
+article.content {
+    margin-top: 25vh;
+
+    h1 {
+        color: $bg;
+        text-shadow: 1px 1px 8px rgba(70, 70, 70, 0.5);
+        margin: 0 0 30px;
     }
 }
 
-main.container {
-    background: $bg;
-    box-shadow: 1px 1px 10px $shading;
-    //border: 1px solid $border;
+aside.sidebar {
+    position: relative;
+    float: left;
+    
+    nav {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        position: fixed;
+        width: 25%;
+        right: 0;
+        // margin is determined by width of the body
+        margin: 0 5vw 0 0;
+
+        header {
+            //top: 0;
+            margin-bottom: 10vh;
+        }
+
+        nav {
+            display: block;
+            margin-bottom: 10vh;
+        }
+
+        footer {
+            //position: absolute;
+            //bottom: 0;
+        }
+    }
 }
 
+.block {
+    background: $bg;
+    padding: 5%;
+    box-shadow: 1px 1px 8px rgba(70, 70, 70, 0.5);
+
+    & > :first-child {
+        margin-top: 0;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
