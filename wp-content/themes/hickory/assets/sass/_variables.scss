@@ -2,34 +2,40 @@
  * Variables
  */
 
-// Colors
-//$bg: #f8fff0;
-//$bg: #f8f5f2;
-$bg: #f3f6f8;
-//$bg-dark: rgb(246, 255, 237);
-//$bg-dark: #f6f3f0;
-$bg-dark: #f1f4f6;
-$border: rgb(189, 214, 132);
-
-//$text: #10222b;
-$text: #1C383D; // with muted blue
-
-//$accent: #95AB63; //green
-$accent: #5C6B7F; //slate
-//$accent: #82AB9B; //teal
-//$accent: #38737D; //muted blue
-
-//$accent-dark: #829653; //with green
-$accent-dark: #2D5C63; //with muted blue
-
-$mid: #8e5841;
-$high: #be9780;
-$low: #724337;
-//$shading: rgba(0,0,0,0.1);
-$shading: rgba(70, 70, 70, 0.5);
-
 // Spacing
-$padding: 5%;
+$margin: 8vh;
+$padding: 3vh;
+
+$thick-border: 5px;
+$thin-border: 1px;
+
+$breakpoint: 992px;
+
+// Colors
+$text: #3D3D47;
+$bg: #FCFDFD;
+$shadow: #3D3D47;
+
+$accent: #A0BEB2;
+$accent-dark: #85A296;
+
+$base: #878F68;
+$base-dark: #676953;
+
+// Typography
+$normal-font-mobile: 5vw;
+$big-font-mobile: 6vw;
+$biggest-font-mobile: 11vw;
+
+$normal-font: 1.5vw;
+$big-font: 2vw;
+$biggest-font: 3.5vw;
 
 // Animation
 $time: 0.3s;
+
+// Mixins
+@mixin background-opacity($color, $opacity: 0.5) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}

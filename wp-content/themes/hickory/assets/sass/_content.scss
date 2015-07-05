@@ -1,0 +1,105 @@
+/**
+ * Content
+ *
+ * All the styles for Hickory's main content
+ */
+
+article.content {
+}
+
+h1.page-title {
+    font-size: $biggest-font-mobile;
+    line-height: 120%;
+
+    span {
+        display: block;
+        font-size: $big-font-mobile;
+        font-style: italic;
+        line-height: 120%;
+        color: $accent;
+    }
+
+    @media only screen and (min-width: $breakpoint) {
+        font-size: $biggest-font;
+
+        span {
+            font-size: $big-font;
+        }
+    }
+}
+
+p.subtitle {
+    padding: $padding 0;
+    border-top: 1px solid $text;
+    border-bottom: 1px solid $text;
+    font-size: $big-font-mobile;
+    color: $accent;
+
+    @media only screen and (min-width: $breakpoint) {
+        font-size: $big-font;
+
+    }
+}
+
+/**
+ * General Styles
+ *
+ * Global styles for all generic HTML elements
+ */
+
+h1, h2 {
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+p {
+   margin: $margin 0;
+}
+
+a {
+    color: $base;
+    text-decoration: none;
+    transition: color ease $time, background ease $time, border ease $time;
+ //   border-bottom: 2px solid $accent;
+
+    &:hover {
+        color: $base-dark;
+//        border-color: $text;
+    }
+
+    &:visited {
+        color: $base;
+//        border-color: $accent;
+    }
+
+    &.button {
+        display: block;
+        width: 50vw;
+        padding: 2vh $padding;
+        margin: $margin auto;
+        text-align: center;
+        font-family: Arvo, serif;
+        border: 2px solid $accent;
+        color: $accent;
+
+        &:hover {
+            background: $accent;
+            color: $bg;
+        }
+
+        @media only screen and (min-width: 992px) {
+            width: 25vw;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

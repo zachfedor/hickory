@@ -2,8 +2,51 @@
  * Header
  */
 
-.main-menu {
+header#site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 1.25% 0;
+    background: $accent;
+
+    a {
+        margin: 0 2.5%;
+        padding: 1.5vw 2.5%;
+        color: $bg;
+        font-family: 'Arvo', serif;
+        font-size: $normal-font-mobile;
+        line-height: 1;
+    }
+
+    a#menu-button {
+        position: absolute;
+        right: 0;
+        @include background-opacity( $accent, 0.9 );
+        z-index: 15;
+    }
+
+     @media only screen and (min-width: $breakpoint) {
+         height: 0px;
+         padding: 0px;
+
+         a {
+             display: none;
+             margin: 1.5vw;
+            font-size: $biggest-font;
+         }
+
+         a#menu-button {
+             display: block;
+             right: 50%;
+             color: $accent;
+             background: none;
+             padding: 0.5vw 1%;
+         }
+     }
 }
+
 /*
 .site-background {
     background: url("../images/wheat.jpeg") no-repeat scroll center center $bg-dark;
@@ -16,7 +59,7 @@
     z-index: -10;
     border-bottom: 1px solid $border;
 
-    
+
     &:after {
         content: "";
         background: $bg-dark;
@@ -33,10 +76,9 @@
         opacity: 0.3;
     }
 }
-*/
 
 header.site-header {
-    margin: 20vh auto;
+    margin: 0;
     text-align: center;
 
     a {
@@ -44,7 +86,7 @@ header.site-header {
         letter-spacing: -1px;
         color: $bg;
         background: $accent;
-        width: 20vw;
+        width: 100%;
         border: 5px solid $bg;
         margin: 0 auto 5px;
         font-family: 'Arvo', serif;
@@ -61,7 +103,9 @@ header.site-header {
 
         &:hover {
             background: $accent-dark;
-            margin: 5px auto 0;
+            //margin: 5px auto 0;
         }
     }
 }
+
+*/

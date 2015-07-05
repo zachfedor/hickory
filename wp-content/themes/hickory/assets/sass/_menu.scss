@@ -1,34 +1,157 @@
 /**
  * Menu
+ *
+ * All the styles for Hickory's overlay/sidebar menu
  */
 
-header.mobile-header {
-    position: absolute;
-    top: 0;
-    left: 0;
+aside#sidebar {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     display: block;
+     width: 100%;
+     //height: 100vh;
+     @include background-opacity( $accent, 1 );
+     color: $bg;
+     text-align: center;
+     opacity: 0;
+     visibility: hidden;
+     //overflow-y: scroll;
+     transition: opacity ease $time, visibility ease $time;
+     z-index: 10;
+     -webkit-transform: translate3d(0,0,0);
+
+     &.active {
+         opacity: 1;
+         visibility: visible;
+     }
+
+     @media only screen and (min-width: $breakpoint) {
+         left: 50%;
+         width: 50%;
+     }
+}
+
+header#sidebar-header {
+    margin-top: 11vh;
+
+    a#sidebar-title {
+        font-size: $biggest-font-mobile;
+
+        span {
+            display: block;
+            font-size: $big-font-mobile;
+        }
+
+        @media only screen and (min-width: $breakpoint) {
+            font-size: $biggest-font;
+
+            span {
+                font-size: $big-font;
+            }
+        }
+    }
+}
+
+ul.menu {
     width: 100%;
-    display: block;
-    
-    a#menu-button {
-        z-index: 100;
-        position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', sans-serif;
+    font-size: $big-font-mobile;
+    list-style-type: none;
+
+    li.menu-item {
+        display: block;
+        padding: $padding 0;
+        text-align: center;
+
+        a {
+            width: 100%;
+            color: $bg;
+            text-decoration: none;
+            opacity: 0.7;
+            padding: ( $padding / 2 );
+            border-bottom: 2px solid transparent;
+            transition: border-color ease $time, color ease $time, opacity ease $time;
+
+            &:hover {
+                opacity: 1;
+                border-color: $accent-dark;
+            }
+        }
     }
 
-    @media screen and (min-width: 768px) {
+    @media only screen and (min-width: $breakpoint) {
+        font-size: $big-font;
+    }
+}
+
+nav#site-nav, nav#social-nav {
+    margin: $margin 0;
+    padding: 0;
+}
+
+nav#social-nav {
+    li.menu-item {
+        display: inline-block;
+        padding: $padding;
+    }
+}
+
+footer#sidebar-footer {
+    color: $accent-dark;
+}
+/*
+header.mobile-header {
+    display: block;
+    width: 100%;
+    padding-top: $padding;
+    font-family: 'Arvo', sans-serif;
+
+    a#site-title, a#menu-button {
+        position: relative;
+        display: inline-block;
+        font-size: 5vw;
+        color: $bg;
+        background: none;
+        border: 5px solid $bg;
+        padding: 4px 8px;
+        z-index: 100;
+        transition: border ease $time, color ease $time, background ease $time;
+
+        &:hover {
+            color: $accent;
+            background: $bg;
+            border: 5px solid $border;
+        }
+    }
+
+    a#menu-button {
+        float: right;
+        text-align: right;
+
+        i.fa {
+            transition: content ease $time;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
         display: none;
     }
 }
 
-header.mobile-header nav#mobile-menu {
+header.mobile-header nav#mobile-nav {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
+    padding-top: 20%;
     background: $accent;
     color: $bg;
     font-size: 10vw;
-    font-family: 'Arvo', sans-serif;
     z-index: 90;
     opacity: 0;
     visibility: hidden;
@@ -42,7 +165,6 @@ header.mobile-header nav#mobile-menu {
     a {
         color: $bg;
         opacity: 0.8;
-        display: block;
     }
 
     a:hover {
@@ -50,32 +172,28 @@ header.mobile-header nav#mobile-menu {
     }
 }
 
-/*
-nav.main-menu {
-    background: $bg;
+nav.main-nav {
+    li.menu-item {
+        margin: 5% 0;
+        //background: $bg;
+        background: none;
+        //box-shadow: 1px 1px 8px $block-shadow;
+        //border-bottom: 1px solid $accent;
+        border: 5px solid $bg;
 
-    ul.menu {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        list-style-type: none;
+        a {
+            padding: 5%;
+            border: 0;
+            color: $bg;
 
-        li.menu-item {
-            text-align: center;
-            display: inline-block;
-            padding: 0 $padding;
-
-            a {
-                display: block;
-                width: 100%;
-                color: $text;
-                text-decoration: none;
-
-                &:hover {
-                    color: $accent;
-                }
-                
+            &:hover {
+                //color: $bg;
+                background: $accent;
             }
+
+        }
+
+        &:hover {
         }
     }
 }
