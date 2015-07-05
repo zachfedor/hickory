@@ -10,22 +10,27 @@
  */
 
 get_header();
+
+get_sidebar();
+
 ?>
 
-<main id="content" class="container" role="main">
+<main role="main">
     <?php  while( have_posts() ) : the_post(); ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class( 'row' ); ?> >
-        <header class="entry-header col-md-12">
-            <h2 class="entry-title"><?php the_title(); ?></h2>
-        </header>
+    <article id="post-<?php the_ID(); ?>" <?php post_class( 'content' ); ?> >
+        <h1 class="entry-title"><?php the_title(); ?></h1>
 
-        <?php the_content(); ?>
+        <section class="block">
+
+            <?php the_content(); ?>
+
+        </section>
     </article><!-- #post-<?php the_ID(); ?> -->
 
     <?php endwhile; ?>
 
-    <?php if( get_the_id() == "2" ) : ?>
+    <?php if( get_the_id() == "2000" ) : ?>
     <aside id="home-work" class="row">
         <header class="entry-header col-md-12">
             <h2 class="entry-title">Meet Some of Our Partners</h2>
@@ -64,4 +69,5 @@ get_header();
 </main>
 
 <?php
+
 get_footer();

@@ -12,8 +12,9 @@ add_theme_support( 'post-thumbnails' );
 
 // Register Menus
 register_nav_menus( array(
-	'main_menu' => 'Main Menu',
-	'footer_menu' => 'Footer Menu',
+	'main'   => 'Main',
+  'mobile' => 'Mobile',
+	'social' => 'Social'
 ));
 
 // Register Widget Areas

@@ -39,7 +39,7 @@ gulp.task('scripts', ['browserify'], function() {
         .pipe( $.uglify() )
         .pipe( gulp.dest( config.distDir ))
         .pipe( browsersync.reload({ stream: true, once: true }));
-    });
+});
 
 gulp.task('styles', function() {
     return gulp.src( config.sassDir + '/**/*.scss' )

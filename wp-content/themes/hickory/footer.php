@@ -4,9 +4,8 @@
  * Footer for Hickory.io
  */
 
-// Close Everything
-// Load scripts?
+wp_footer();
 
-//echo "footer.php<br />";
-
-hickory_do_footer();
+?>
+</body>
+</html>

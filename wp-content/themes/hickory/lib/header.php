@@ -10,8 +10,18 @@ function hickory_do_header()
     ?>
     </head>
     <body class="">
-        <div class="site-background"></div>
-    <?php
+        <header class="mobile-header">
+            <a href="#" class="site-title">Hickory Town Workshop</a>
+
+            <a href="#" id="menu-button">menu</a>
+
+            <?php
+            /*
+            * @todo add mobile navigation
+            */
+            ?>
+        </header>
+        <?php
 }
 
 // Header Hero function to create large image and site title

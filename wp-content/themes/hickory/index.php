@@ -12,11 +12,11 @@
 get_header();
 ?>
 
-<main id="content" class="container" role="main">
+<main id="content" role="main">
     <?php  while( have_posts() ) : the_post(); ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class( 'row' ); ?> >
-        <header class="entry-header col-md-12">
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+        <header class="entry-header">
             <h2 class="entry-title"><?php the_title(); ?></h2>
         </header>
 

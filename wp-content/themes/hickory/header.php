@@ -4,24 +4,28 @@
  * Header for Hickory.io
  */
 
-// Lib/Doctype
-hickory_do_doctype();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hickory</title>
 
-// Lib/Load-Assets
-hickory_do_favicon();
-hickory_do_scripts();
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico?v=1" rel="shortcut icon" type="image/x-icon">
 
-// Lib/Analytics
-//hickory_analytics();
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,600,600italic,300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-// Wordpress Head
+<?php
+
 wp_head();
 
-// Lib/Header
-hickory_do_header();
+?>
 
-// Lib/Menu
-hickory_do_main_menu();
+</head>
+<body class="">
+    <header id="site-header" >
+        <a href="#" id="site-title">H</a>
 
-// Lib/Header
-hickory_do_header_hero();
+        <a href="#" id="menu-button"><i class="fa fa-bars"></i></a>
+    </header>
