@@ -58,6 +58,7 @@ gulp.task('watch', function() {
     gulp.watch( config.sassDir + '/**/*.scss', [ 'styles' ]);
     gulp.watch( config.jsDir + '/**/*.js', [ 'scripts' ]);
     gulp.watch( "./**/*.php" ).on( 'change', browsersync.reload );
+    gulp.watch( "./**/*.html" ).on( 'change', browsersync.reload );
 });
 
 gulp.task( 'default', [ 'scripts', 'styles' ]);
