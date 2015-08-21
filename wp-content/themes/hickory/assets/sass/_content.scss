@@ -52,6 +52,21 @@ h1, h2 {
     font-weight: normal;
 }
 
+h2 {
+    margin: ($margin * 1.5) 0 ($margin / 2);
+    font-size: $big-font-mobile;
+    color: $accent;
+
+    @media only screen and (min-width: $breakpoint) {
+        font-size: $big-font;
+
+    }
+}
+
+h2 + p {
+    margin-top: 0;
+}
+
 h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
@@ -102,4 +117,20 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1em;
+
+    li {
+        &:before {
+            content:"\22d7";
+            color: $accent;
+            font-size: 0.8vw;
+            padding-right: 1em;
+            position:relative;
+            top: -0.2em;
+        }
+    }
 }
